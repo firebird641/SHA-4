@@ -277,7 +277,7 @@ class sponge_construction(object):
             f = self.roundfunc(i)
             r = f[:self.blocklength]
             c = f[self.blocklength:]
-        return output[:self.blocklength]
+        return output[:bitcount]
 
 class hmac_construction(object):
     def __init__(self, hash_function):
